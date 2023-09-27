@@ -18,18 +18,18 @@ namespace Lab4
         #endregion
 
         public PlaneTransformation(
-            float a11_ = 0, float a12_ = 0, float a13_ = 0, 
-            float a21_ = 0, float a22_ = 0, float a23_ = 0, 
-            float x_ = 0, float y_ = 0)
+            float a11 = 0, float a12 = 0, float a13 = 0, 
+            float a21 = 0, float a22 = 0, float a23 = 0, 
+            float x = 0, float y = 0)
         {
-            this.a11 = a11_;
-            this.a12 = a12_;
-            this.a13 = a13_;
-            this.a21 = a21_;
-            this.a22 = a22_;
-            this.a23 = a23_;
-            this.x = x_;
-            this.y = y_;
+            this.a11 = a11;
+            this.a12 = a12;
+            this.a13 = a13;
+            this.a21 = a21;
+            this.a22 = a22;
+            this.a23 = a23;
+            this.x = x;
+            this.y = y;
             X = 0;
             Y = 0;
         }
@@ -58,19 +58,19 @@ namespace Lab4
         #endregion
 
         public SpaceTransformation(
-            float a11_ = 0, float a12_ = 0, float a13_ = 0, float a14_ = 0,
-            float a21_ = 0, float a22_ = 0, float a23_ = 0, float a24_ = 0,
-            float a31_ = 0, float a32_ = 0, float a33_ = 0, float a34_ = 0,
-            float x_ = 0, float y_ = 0, float z_ = 0
-            ) : base(a11_, a12_, a13_, a21_, a22_, a23_, x_, y_)
+            float a11 = 0, float a12 = 0, float a13 = 0, float a14 = 0,
+            float a21 = 0, float a22 = 0, float a23 = 0, float a24 = 0,
+            float a31 = 0, float a32 = 0, float a33 = 0, float a34 = 0,
+            float x = 0, float y = 0, float z = 0
+            ) : base(a11, a12, a13, a21, a22, a23, x, y)
         {
-            this.a14 = a14_;
-            this.a24 = a24_;
-            this.a31 = a31_;
-            this.a32 = a32_;
-            this.a33 = a33_;
-            this.a34 = a34_;
-            this.z = z_;
+            this.a14 = a14;
+            this.a24 = a24;
+            this.a31 = a31;
+            this.a32 = a32;
+            this.a33 = a33;
+            this.a34 = a34;
+            this.z = z;
             this.Z = 0;
         }
         public SpaceTransformation() : this(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) { }
@@ -98,6 +98,7 @@ namespace Lab4
             SpaceTransformation spaceTransformation = new SpaceTransformation(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
             spaceTransformation.Calculate();
             Console.WriteLine(spaceTransformation.GetResult());
+
 
         }
     }
