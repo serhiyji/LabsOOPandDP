@@ -150,7 +150,7 @@ namespace Lab9
         static void Main(string[] args)
         {
             int userSelect;
-            PlaneTransformation baseobj = new PlaneTransformation();
+            BaseTransformation baseobj;
             while (true)
             {
                 Console.WriteLine("Enter '0' if you want to work with PlaneTransformation and '1' - with SpaceTransformation");

@@ -49,6 +49,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            Resize += Form1_Resize;
             ResumeLayout(false);
         }
 
